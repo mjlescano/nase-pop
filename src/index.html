@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nase Pop</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+    <script type="module" src="/main.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #ff4a3f;
+      }
+
+      #original {
+        position: absolute;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+        opacity: 0.2;
+      }
+    </style>
+    <script>
+      if (['127.0.0.1', 'localhost'].includes(window.location.hostname))
+        import('/js/watch.js')
+    </script>
+  </head>
+  <body>
+    <img id="original" src="/original.jpg" alt="" />
+  </body>
+</html>

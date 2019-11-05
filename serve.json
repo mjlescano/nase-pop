@@ -1,0 +1,7 @@
+{
+  "public": "src",
+  "cleanUrls": true,
+  "directoryListing": false,
+  "trailingSlash": false,
+  "unlisted": [".DS_Store"]
+}
